@@ -1,0 +1,15 @@
+{
+  "name": "datastraw-crm-monorepo",
+  "version": "1.0.0",
+  "description": "Datastraw Support Ticketing CRM - Monorepo for Express API & React Frontend",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "cd server && NODE_ENV=production node index.js",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
